@@ -1,10 +1,12 @@
 const repeatString = function(message, n)  {
-    let base = message;
-    for(let i = 1; i < n; i++)
+    let base = "";
+    if(n < 0) return "ERROR";
+    
+    for(let i = 0; i < n; i++)
     {
-        message += base;
+        base += message;
     }
-    return message;
+    return base;
 };
 
 // Do not edit below this line
