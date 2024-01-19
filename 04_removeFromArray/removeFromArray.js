@@ -1,12 +1,12 @@
 const removeFromArray = function(numbers, index) {
-    let newArray;
-    for(let i = 0; i < index; i++)
+    let newArray = [];
+    for(let i = 0; i < index - 1; i++)
     {
         newArray[i] = numbers[i];
     }
-    let newArray2;
+    let newArray2 = [];
     let arrayLength = numbers.length;
-    for(let i = numbers.length; i > index; i++)
+    for(let i = numbers.length - 1; i > index + 1; i++)
     {
         newArray2[i] = numbers[i];
     }
