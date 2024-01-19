@@ -6,7 +6,7 @@ const removeFromArray = function(numbers, index) {
     }
     let newArray2 = [];
     let arrayLength = numbers.length;
-    for(let i = numbers.length - 1; i > index + 1; i++)
+    for(let i = index; i < arrayLength + 1; i++)
     {
         newArray2[i] = numbers[i];
     }
